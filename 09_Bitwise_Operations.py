@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img1 = cv2.imread("./lena.jpg")
+img1 = cv2.imread("./images/lena.jpg")
 H, W, C = img1.shape
 img2 = np.zeros((H, W, C), np.uint8)
 img2 = cv2.rectangle(img2, (200, 0), (300, 100), (255, 255, 255), -1)

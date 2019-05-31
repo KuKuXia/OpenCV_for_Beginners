@@ -22,7 +22,7 @@ def click_event(event, x, y, flags, param):
         cv2.imshow('image', img)
 
 
-img = cv2.imread('./lena.jpg')
+img = cv2.imread('./images/lena.jpg')
 cv2.imshow('image', img)
 
 cv2.setMouseCallback('image', click_event)

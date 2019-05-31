@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 
 # img = np.zeros([512, 512, 3], np.uint8)
-img = cv2.imread('lena.jpg', 1)
+img = cv2.imread('./images/lena.jpg', 1)
 
 # Draw a line on the image
 img = cv2.line(img, (0, 0), (255, 255), (147, 96, 44), 10)

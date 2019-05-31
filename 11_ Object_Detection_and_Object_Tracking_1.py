@@ -25,7 +25,7 @@ cv2.createTrackbar("US", "Tracking", 250, 255, nothing)
 cv2.createTrackbar("UV", "Tracking", 250, 255, nothing)
 
 while True:
-    frame = cv2.imread('smarties.png')
+    frame = cv2.imread('./images/smarties.png')
 
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 

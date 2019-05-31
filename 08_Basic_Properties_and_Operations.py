@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
-img = cv2.imread('./messi5.jpg')
-img2 = cv2.imread('./opencv-logo.png')
+img = cv2.imread('./images/messi5.jpg')
+img2 = cv2.imread('./images/opencv-logo.png')
 # img.shape returns a tuple of number of rows, columns, and channels
 print("Shape is: ", img.shape)
 
