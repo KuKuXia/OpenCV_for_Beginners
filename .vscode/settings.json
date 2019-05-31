@@ -1,0 +1,15 @@
+{
+    "files.autoGuessEncoding": true,
+    "editor.find.autoFindInSelection": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "on",
+    "python.pythonPath": "C:\\MySoftware\\Anaconda3\\envs\\CV\\python.exe",
+    "python.testing.pyTestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pyTestEnabled": false,
+    "python.testing.promptToConfigure": false
+}

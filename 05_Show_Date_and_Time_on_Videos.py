@@ -1,5 +1,7 @@
-import cv2
 import datetime
+
+import cv2
+
 cap = cv2.VideoCapture(0)
 
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
@@ -23,6 +25,6 @@ while(cap.isOpened()):
             break
     else:
         break
-
+print("Closing the camera.")
 cap.release()
 cv2.destroyAllWindows()
