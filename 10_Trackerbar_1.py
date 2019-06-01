@@ -8,7 +8,7 @@ def nothing(x):
 
 # Create a black image, a window
 img = np.zeros((512, 512, 3), np.uint8)
-cv.namedWindow('image')
+cv.namedWindow('image', cv.WINDOW_NORMAL)
 
 cv.createTrackbar('B', 'image', 0, 255, nothing)
 cv.createTrackbar('G', 'image', 0, 255, nothing)

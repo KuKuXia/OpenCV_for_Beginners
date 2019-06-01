@@ -7,7 +7,7 @@ def nothing(x):
 
 
 # Create a black image, a window
-cv.namedWindow('image')
+cv.namedWindow('image', cv.WINDOW_NORMAL)
 
 cv.createTrackbar('CP', 'image', 10, 400, nothing)
 

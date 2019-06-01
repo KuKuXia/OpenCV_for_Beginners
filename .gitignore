@@ -1,5 +1,7 @@
 images/misc
 images/*.tif
+*.csv
+eye_recording.flv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
