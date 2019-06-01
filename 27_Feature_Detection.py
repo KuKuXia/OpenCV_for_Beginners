@@ -1,5 +1,5 @@
 """
-For some reason, the SURF and SIFT algorithms are protected and not install into the opencv-python package since opecn-cv 3.x. They are included in opencv-contrib-python, so in order to run this file, you need run the following command:
+For some reason, the SURF and SIFT algorithms are protected and not install into the opencv-python package since OpenCV 3.x. They are included in opencv-contrib-python, so in order to run this file, you need run the following command:
 pip uninstall opencv-contrib-python
 pip uninstall opencv-python
 pip install opencv-contrib-python==3.3.0.10

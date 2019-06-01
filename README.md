@@ -10,7 +10,13 @@ For more image processing basics, please check my Image_Processing_100_Questions
 - Original Japanese Version by yoyoyo-yo:
 [Gasyori 100knock](https://github.com/yoyoyo-yo/Gasyori100knock)
 
-## Prerequisites
+This repository contains code files copied from some online courses and web tutorials. I modified these files so that it's more clear and easy for beginners to learn. The original  links are listed below:
+
+1. [OpenCV Python Tutorial For Beginners](https://www.youtube.com/watch?v=kdLM6AOd2vc&list=PLS1QulWo1RIa7D1O6skqDQ-JZ1GGHKK-K)
+
+2. [Pysource](https://pysource.com/)
+
+## Installation
 
 1. Download this repository and extract it：
 
