@@ -2,7 +2,7 @@ images/misc
 images/*.tif
 *.csv
 eye_recording.flv
-
+video/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -117,3 +117,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+Project/shape_predictor_68_face_landmarks.dat
