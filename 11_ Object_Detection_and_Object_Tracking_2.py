@@ -18,7 +18,7 @@ def nothing(x):
 
 cap = cv2.VideoCapture(0)
 
-cv2.namedWindow("Tracking")
+cv2.namedWindow("Tracking", cv2.WINDOW_NORMAL)
 cv2.createTrackbar("LH", "Tracking", 0, 255, nothing)
 cv2.createTrackbar("LS", "Tracking", 0, 255, nothing)
 cv2.createTrackbar("LV", "Tracking", 0, 255, nothing)
@@ -26,7 +26,7 @@ cv2.createTrackbar("UH", "Tracking", 255, 255, nothing)
 cv2.createTrackbar("US", "Tracking", 255, 255, nothing)
 cv2.createTrackbar("UV", "Tracking", 255, 255, nothing)
 
-while True:
+while(cap.isOpened()):
     #frame = cv2.imread('./images/smarties.png')
     _, frame = cap.read()
 
@@ -55,5 +55,6 @@ while True:
     if key == 27:
         break
 
+cv2.imwrite('object.jpg', frame)
 cap.release()
 cv2.destroyAllWindows()

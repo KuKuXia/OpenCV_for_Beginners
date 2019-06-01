@@ -26,6 +26,6 @@ matching_result = cv2.drawMatches(
 
 cv2.imshow("Img1", img1)
 cv2.imshow("Img2", img2)
-cv2.imshow("Matching result", matching_result)
+cv2.imshow("Matching Result", matching_result)
 cv2.waitKey(0)
 cv2.destroyAllWindows()

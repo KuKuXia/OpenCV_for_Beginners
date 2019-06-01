@@ -16,7 +16,7 @@ def nothing(x):
     pass
 
 
-cv2.namedWindow("Tracking")
+cv2.namedWindow("Tracking", cv2.WINDOW_NORMAL)
 cv2.createTrackbar("LH", "Tracking", 0, 255, nothing)
 cv2.createTrackbar("LS", "Tracking", 0, 255, nothing)
 cv2.createTrackbar("LV", "Tracking", 0, 255, nothing)
@@ -51,5 +51,4 @@ while True:
     key = cv2.waitKey(1)
     if key == 27:
         break
-
 cv2.destroyAllWindows()
