@@ -4,7 +4,7 @@
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.wordWrap": "on",
-    "python.pythonPath": "C:\\MySoftware\\Anaconda3\\envs\\CV34\\python.exe",
+    "python.pythonPath": "C:\\MySoftware\\Anaconda3\\envs\\CV\\python.exe",
     "python.testing.pyTestArgs": [
         "."
     ],
@@ -28,6 +28,7 @@
         "itseez",
         "jz",
         "k",
+        "kanade",
         "kd",
         "list",
         "lm",
