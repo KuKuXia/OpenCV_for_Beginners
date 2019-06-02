@@ -1,8 +1,15 @@
+"""
+Please download the images from:
+https://pysource.com/2018/07/27/check-if-a-set-of-images-match-the-original-one-with-opencv-and-python/
+"""
 import cv2
 import numpy as np
 
 original = cv2.imread("./images/original_golden_bridge.jpg")
-duplicate = cv2.imread("./images/duplicate.jpg")
+duplicate = cv2.imread("./images/Golden_Bridge/duplicate.jpg")
+original = cv2.resize(original, dsize=None, fx=1/3, fy=1/3)
+duplicate = cv2.resize(duplicate, dsize=None, fx=1/3, fy=1/3)
+
 # duplicate = cv2.imread("./images/cartoonized.jpg")
 # 1) Check if 2 images are equals
 if original.shape == duplicate.shape:

@@ -3,6 +3,8 @@ images/*.tif
 *.csv
 eye_recording.flv
 video/
+letters/
+Golden_Bridge/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
