@@ -5,12 +5,19 @@ import numpy as np
 
 class Keyboard(object):
 
-    def __init__(self):
+    def __init__(self, key_set_1=None, key_set_2=None):
 
         self.keyboard = np.zeros((600, 1000, 3), np.uint8)
-        self.keys_set_1 = {0: "Q", 1: "W", 2: "E", 3: "R", 4: "T",
-                           5: "A", 6: "S", 7: "D", 8: "F", 9: "G",
-                           10: "Z", 11: "X", 12: "C", 13: "V", 14: "B"}
+        if not key_set_1:
+            self.keys_set_1 = {0: "Q", 1: "W", 2: "E", 3: "R", 4: "T",
+                               5: "A", 6: "S", 7: "D", 8: "F", 9: "G",
+                               10: "Z", 11: "X", 12: "C", 13: "V", 14: "B"}
+        else:
+            self.keys_set_1 = key_set_1
+        if key_set_2:
+            self.keys_set_2 = key_set_2
+        else:
+            self.keys_set_2 = None
 
     def set_background_color(self, color):
         self.keyboard[:] = color
@@ -87,6 +94,32 @@ class Keyboard(object):
 
     def show_keyboard(self):
         cv2.imshow("keyboard", self.keyboard)
+
+
+def draw_menu(keyboard, font):
+    rows, cols, _ = keyboard.shape
+    th_lines = 4  # thickness lines
+    cv2.line(keyboard, (int(cols/2) - int(th_lines/2), 0), (int(cols/2) - int(th_lines/2), rows),
+             (51, 51, 51), th_lines)
+    cv2.putText(keyboard, "LEFT", (80, 300), font, 6, (255, 255, 255), 5)
+    cv2.putText(keyboard, "RIGHT", (80 + int(cols/2), 300),
+                font, 6, (255, 255, 255), 5)
+
+
+def eyes_contour_points(facial_landmarks):
+    left_eye = []
+    right_eye = []
+    for n in range(36, 42):
+        x = facial_landmarks.part(n).x
+        y = facial_landmarks.part(n).y
+        left_eye.append([x, y])
+    for n in range(42, 48):
+        x = facial_landmarks.part(n).x
+        y = facial_landmarks.part(n).y
+        right_eye.append([x, y])
+    left_eye = np.array(left_eye, np.int32)
+    right_eye = np.array(right_eye, np.int32)
+    return left_eye, right_eye
 
 
 def midpoint(p1, p2):

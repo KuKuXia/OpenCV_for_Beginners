@@ -5,6 +5,7 @@ eye_recording.flv
 video/
 letters/
 Golden_Bridge/
+*.wav
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
