@@ -1,5 +1,7 @@
 import cv2
 import numpy as np
+from realsense_opencv import *
+
 
 font = cv2.FONT_HERSHEY_COMPLEX
 
@@ -25,6 +27,7 @@ for cnt in contours:
         cv2.putText(img, "Ellipse", (x, y), font, 1, (0))
     else:
         cv2.putText(img, "Circle", (x, y), font, 1, (0))
+        
 
 cv2.imshow("shapes", img)
 cv2.imshow("Threshold", threshold)

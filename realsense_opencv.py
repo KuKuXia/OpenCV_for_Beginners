@@ -13,6 +13,7 @@ import sys
 DEVICE_ONE = '831612073761'  # Tag
 DEVICE_TWO = '831612073809'  # No tag
 
+
 class Realsense(object):
     def __init__(self, camera_num=1, device_id=None, depth_resolution=[640, 480], color_resolution=[640, 480]):
         """
@@ -20,7 +21,7 @@ class Realsense(object):
 
         Args:
                         - multi_camera (int, optional): number of the camera to initialize, default is 1, if greater than 1, it should be less or equal than len(device_id).
-                        - device_id (list, optional): the device id to use. 
+                        - device_id (list, optional): the device id to use.
                         - depth_resolution(list, optional): the depth image resolution.
                         - color_resolution(list, optional): the color image resolution.
         """
@@ -132,7 +133,7 @@ class Realsense(object):
 
         Returns:
                         - color_images(list): all the color images from the camera
-                        - depth_images(list): all the depth images from the camera 
+                        - depth_images(list): all the depth images from the camera
                                                                         - depth_colormap(list): all the depth colormaps from the camera
         """
 
@@ -167,7 +168,7 @@ if __name__ == "__main__":
     camera_num = 2
     camera = Realsense(camera_num=camera_num, device_id=[
         DEVICE_ONE, DEVICE_TWO], color_resolution=[1280, 720], depth_resolution=[1280, 720])
-    
+
     try:
         while True:
             color_images, depth_images, depth_colormaps = camera.get_images()
@@ -193,7 +194,8 @@ if __name__ == "__main__":
             if key == 115:
                 cv2.imwrite("./images/my_image_image.jpg", color_images[0])
                 cv2.imwrite("./images/my_depth_image.jpg", depth_images[0])
-                cv2.imwrite("./images/my_depth_colormap.jpg", depth_colormaps[0])
+                cv2.imwrite("./images/my_depth_colormap.jpg",
+                            depth_colormaps[0])
                 print("Save")
             elif key == ord('q') or key == 27:
                 cv2.destroyAllWindows()
