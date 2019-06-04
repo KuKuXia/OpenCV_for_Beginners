@@ -1,8 +1,14 @@
-from realsense_opencv import Realsense, DEVICE_ONE, DEVICE_TWO
+"""
+Using RealSense to learn the color space.
+"""
+
 import sys
-import pyrealsense2 as rs
-import numpy as np
+
 import cv2
+import numpy as np
+
+import pyrealsense2 as rs
+from realsense_opencv import DEVICE_ONE, DEVICE_TWO, Realsense
 
 number = 0
 for filename in dir(cv2):

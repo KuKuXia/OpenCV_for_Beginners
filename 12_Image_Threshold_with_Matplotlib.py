@@ -1,3 +1,7 @@
+"""
+Color image loaded by OpenCV is in BGR mode. But Matplotlib displays in RGB mode. 
+"""
+
 import cv2 as cv
 import numpy as np
 from matplotlib import pyplot as plt

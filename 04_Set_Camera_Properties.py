@@ -1,3 +1,10 @@
+"""
+Set the properties of camera
+
+Check this link for all properties:
+https://docs.opencv.org/2.4/modules/highgui/doc/reading_and_writing_images_and_video.html#videocapture-get
+"""
+
 import cv2
 cap = cv2.VideoCapture(0)
 print(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
