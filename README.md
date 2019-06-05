@@ -70,7 +70,7 @@ The fully documented files are listed below. I'm working on adding more comments
 | [08_Basic_Properties_and_Operations](./08_Basic_Properties_and_Operations.py) | Basic properties and operations on images                    |
 | [09_Arithmetic_Operations](./09_Arithmetic_Operations.py)    | Arithmetic operation on images                               |
 | [10_Trackerbar_RGB_Chanels](./10_Trackerbar_RGB_Chanels.py)  | Learn RGB channels with trackerbar                           |
-| [10_Trackerbar_Switch_and _Text](./10_Trackerbar_Switch_and _Text.py) | Trackerbar with switch and text                              |
+| [10_Trackerbar_Switch_and _Text](./10_Trackerbar_Switch_and_Text.py) | Trackerbar with switch and text                              |
 | [11_Object_Detection_and_Object_Tracking_using_RealSense](./11_Object_Detection_and_Object_Tracking_using_RealSense.py) | Using RealSense to do real time object tracking and detection |
 | [12_Image_Global_Thresholding](./12_Image_Global_Thresholding.py) | Image thresholding                                           |
 | [12_Image_Thresholding_with_Matplotlib](./12_Image_Thresholding_with_Matplotlib.py) | Image thresholding with matplotlib                           |
