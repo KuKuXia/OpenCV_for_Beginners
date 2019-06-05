@@ -1,10 +1,17 @@
 """
+Smoothing images
+
 Homogeneous filter is the most simple filter, each output pixel is the mean of its kernal neighbors. 
 
-Low Pass Filters(LPF): Help in removing noises, blurring the images.
-High Pass Filters(HPF): Help in finding the edges in the images
+Image blurring: 
+    - Low Pass Filters(LPF): Help in removing noises, blurring the images.
+        - Averaging Filter
+
+Edge detection:
+    - High Pass Filters(HPF): Help in finding the edges in the images
 """
 
+# Import the packages
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -14,6 +21,7 @@ img = cv2.imread('./images/Noise_salt_and_pepper.png')
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
+# Create the kernel
 kernel = np.ones((5, 5), np.float32) / 25
 
 # 2D Convolutional Filter
@@ -25,10 +33,14 @@ blur = cv2.blur(img, (5, 5))
 # Gaussian filter
 gaussian_blur = cv2.GaussianBlur(img, (5, 5), 0)
 
+# If you want, you can create a Gaussian kernel with thefunction,
+print("Gaussian Kernel is: ", cv2.getGaussianKernel((10), 0))
+
 # Median filter: replacing each pixel's value with the median of its neighboring pixels. This method is great when dealing with "salt and pepper noise".
 median = cv2.medianBlur(img, 5)
 
-# Bilateral filter: a non-linear, edge-preserving, and noise-reducing smoothing filter for images
+# Bilateral filter: a non-linear, edge-preserving, and noise-reducing smoothing filter for images.
+# It is highly effective at noise removal while preserving edges. But the operation is slower compared to other filters.
 bilateralFilter = cv2.bilateralFilter(img, 9, 75, 75)
 
 titles = ['image', '2D Convolution', 'blur',
