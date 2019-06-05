@@ -29,6 +29,7 @@ This repository contains some code files copied from some online courses and web
     ```
 
 2. Download the [anaconda](https://www.anaconda.com/downloads) and install it.
+
 3. Create a virtual environment:
 
     ```bash
@@ -43,6 +44,13 @@ This repository contains some code files copied from some online courses and web
    ```
 
 5. Open one file and enjoy your journey.
+
+## Note
+
+1. Python scalar operations are faster than Numpy scalar operations. So for operations including one or two elements, Python scalar is better than Numpy arrays. Numpy takes advantage when size of array is a little bit bigger.
+2. Normally, OpenCV functions are faster than Numpy functions. So for same operation, OpenCV functions are preferred. But, there can be exceptions, especially when Numpy works with views instead of copies.
+
+
 
 ## Content
 
@@ -59,4 +67,9 @@ The fully documented files are listed below. I'm working on adding more comments
 | [06_Show_Pixel_Details_using_Mouse](./06_Show_Pixel_Details_using_Mouse.py) | Show pixel details by callback function           |
 | [07_Draw_Lines_using_Mouse](./07_Draw_Lines_using_Mouse.py)  | Draw lines using callback function                |
 | [07_Draw_Shapes_using_Mouse](./07_Draw_Shapes_using_Mouse.py) | Draw rectangle and circle using callback function |
+| [08_Basic_Properties_and_Operations](./08_Basic_Properties_and_Operations.py) | Basic properties and operations on images         |
+| [09_Arithmetic_Operations](./09_Arithmetic_Operations.py)    | Arithmetic operation on images                    |
+|                                                              |                                                   |
+|                                                              |                                                   |
+|                                                              |                                                   |
 
