@@ -69,7 +69,7 @@ The fully documented files are listed below. I'm working on adding more comments
 | [07_Draw_Shapes_using_Mouse](./07_Draw_Shapes_using_Mouse.py) | Draw rectangle and circle using callback function |
 | [08_Basic_Properties_and_Operations](./08_Basic_Properties_and_Operations.py) | Basic properties and operations on images         |
 | [09_Arithmetic_Operations](./09_Arithmetic_Operations.py)    | Arithmetic operation on images                    |
-|                                                              |                                                   |
-|                                                              |                                                   |
+| [10_Trackerbar_RGB_Chanels](./10_Trackerbar_RGB_Chanels.py)  | Learn RGB channels with trackerbar                |
+| [10_Trackerbar_Switch_and _Text](./10_Trackerbar_Switch_and _Text.py) | Trackerbar with switch and text                   |
 |                                                              |                                                   |
 

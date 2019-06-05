@@ -34,6 +34,7 @@ while (1):
     k = cv.waitKey(1) & 0xFF
     if k == 27:
         break
+
     # Get the current positions of trackbars
     b = cv.getTrackbarPos('B', 'image')
     g = cv.getTrackbarPos('G', 'image')
@@ -46,5 +47,5 @@ while (1):
     else:
         img[:] = [b, g, r]
 
-# Destory all the windows
+# Destroy all the windows opened before
 cv.destroyAllWindows()

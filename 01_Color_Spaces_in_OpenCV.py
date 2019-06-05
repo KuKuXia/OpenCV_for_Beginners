@@ -1,5 +1,17 @@
 """
-Using RealSense to learn the color space.
+Using RealSense to learn the color space. 
+
+To change the color space, use cv2.cvtColor(img,flags).
+    flags:
+    The most widely used color-space conversion methods are: 
+    - BGR <-> GRAY: cv2.COLOR_BGR2GRAY
+    - BGR <-> HSV: cv2.COLOR_BGR2HSV
+
+Note: For HSV:
+    - Hue range is [0,179]
+    - Saturation range is [0,255]
+    - Value range is [0,255]
+    Different softwares use different scales. So if you are comparing OpenCV values with them, you need to normalize these ranges.
 """
 
 # Import the packages
@@ -18,11 +30,10 @@ for filename in dir(cv2):
         number += 1
         print(filename)
 
-print("There are {} kinds of color spaces methods in OpenCV.".format(str(number)))
-
-# Callback function
+print("There are {} kinds of methods about color spaces in OpenCV.".format(str(number)))
 
 
+# Define the callback function
 def nothing(x):
     pass
 
@@ -30,10 +41,10 @@ def nothing(x):
 # Create windows to contain the image
 cv2.namedWindow("Video", cv2.WINDOW_NORMAL)
 cv2.namedWindow("Tracking", cv2.WINDOW_NORMAL)
-cv2.createTrackbar("LH", "Tracking", 0, 255, nothing)
+cv2.createTrackbar("LH", "Tracking", 0, 179, nothing)
 cv2.createTrackbar("LS", "Tracking", 0, 255, nothing)
 cv2.createTrackbar("LV", "Tracking", 0, 255, nothing)
-cv2.createTrackbar("UH", "Tracking", 250, 255, nothing)
+cv2.createTrackbar("UH", "Tracking", 20, 179, nothing)
 cv2.createTrackbar("US", "Tracking", 250, 255, nothing)
 cv2.createTrackbar("UV", "Tracking", 250, 255, nothing)
 
@@ -43,10 +54,9 @@ camera = Realsense(camera_num=camera_num, device_id=[
                    DEVICE_TWO], color_resolution=[1280, 720], depth_resolution=[1280, 720])
 try:
     while True:
-        # Read the image
+        # Read the image, realsense are
         color_images, depth_images, depth_colormaps = camera.get_images()
         frame = color_images[0]
-
         # Change the image color space from RGB -> HSV
         hsv_frame = cv2.cvtColor(frame, cv2.COLOR_RGB2HSV)
 
@@ -59,10 +69,11 @@ try:
         u_s = cv2.getTrackbarPos("US", "Tracking")
         u_v = cv2.getTrackbarPos("UV", "Tracking")
 
-        l_b = np.array([l_h, l_s, l_v])
-        u_b = np.array([u_h, u_s, u_v])
+        lower_threshold = np.array([l_h, l_s, l_v])
+        upper_threshold = np.array([u_h, u_s, u_v])
 
-        mask = cv2.inRange(hsv_frame, l_b, u_b)
+        # Define range of color in HSV
+        mask = cv2.inRange(hsv_frame, lower_threshold, upper_threshold)
         res = cv2.bitwise_and(frame, frame, mask=mask)
 
         # Red color
