@@ -4,7 +4,7 @@
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.wordWrap": "on",
-    "python.pythonPath": "C:\\MySoftware\\Anaconda3\\envs\\CV\\python.exe",
+    "python.pythonPath": "/home/longxiajun/MySoftware/anaconda3/envs/CV/bin/python",
     "python.testing.pyTestArgs": [
         "."
     ],
