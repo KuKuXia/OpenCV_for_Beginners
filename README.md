@@ -76,8 +76,10 @@ The fully documented files are listed below. I'm working on adding more comments
 | [12_Image_Thresholding_with_Matplotlib](./12_Image_Thresholding_with_Matplotlib.py) | Image thresholding with matplotlib                           |
 | [13_Adaptive_thresholding](./13_Adaptive_thresholding.py)    | Adaptive thresholding                                        |
 | [14_Otsu's_Binarization](./14_Otsu's_Binarization.py)        | Otsu's Binarization                                          |
-|                                                              |                                                              |
-|                                                              |                                                              |
+| [42_Blob_Detection](./42_Blob_Detection.py)                  | Blob detection                                               |
+| [43_Seamless_Cloning](./43_Seamless_Cloning.py)              | Seamless cloning                                             |
+| [43_Seamless_Cloning_with_Different_Clone_Mode](./43_Seamless_Cloning_with_Different_Clone_Mode.py) | Seamless cloning with different clone mode                   |
+| [44_Non_Photorealistic_Rendering](./44_Non_Photorealistic_Rendering.py) | Non-Photorealistic Rendering using domain transform for edge-aware filtering |
 
 
 

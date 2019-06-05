@@ -1,4 +1,11 @@
-# To show the difference between normal_clone and mixed_clone, use the images bellow
+
+"""
+Seamless cloning with different cloning mode
+Original url: 
+https://www.learnopencv.com/seamless-cloning-using-opencv-python-cpp/
+"""
+
+# Import the packages
 import numpy as np
 import cv2
 
