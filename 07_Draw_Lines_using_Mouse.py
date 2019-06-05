@@ -1,15 +1,13 @@
 """
-Draw shapes using mouse version one
-
+Draw lines using callback function 
 """
 
 # Import the packages
 import numpy as np
 import cv2
 
+
 # Define the callback function
-
-
 def click_event(event, x, y, flags, param):
     # Left button down: draw the line
     if event == cv2.EVENT_LBUTTONDOWN:

@@ -1,5 +1,5 @@
 """
-Drawing functions in OpenCV
+Draw draw geometric shapes on image
 
 Some common arguments as given below:
 
@@ -47,5 +47,8 @@ img = cv2.polylines(img, [pts], True, (0, 255, 255))
 
 cv2.imshow('image', img)
 
+# Wait until a key pressed
 cv2.waitKey(0)
+
+# Destroy all the windows opened before
 cv2.destroyAllWindows()

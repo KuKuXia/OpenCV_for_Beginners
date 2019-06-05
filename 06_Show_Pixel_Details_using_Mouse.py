@@ -10,9 +10,8 @@ import cv2
 events = [i for i in dir(cv2) if 'EVENT' in i]
 print(events)
 
-# Callback functions
 
-
+# Define the callback function
 def click_event(event, x, y, flags, param):
     # Left button down: show the cooridnates of the clicked points (x, y)
     if event == cv2.EVENT_LBUTTONDOWN:
@@ -42,6 +41,8 @@ cv2.imshow('image', img)
 # Set the callback function
 cv2.setMouseCallback('image', click_event)
 
-# Wait until a button pressed
+# Wait until a key pressed
 cv2.waitKey(0)
+
+# Destroy all the windows opened before
 cv2.destroyAllWindows()

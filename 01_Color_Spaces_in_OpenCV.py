@@ -2,29 +2,33 @@
 Using RealSense to learn the color space.
 """
 
+# Import the packages
 import sys
 
 import cv2
 import numpy as np
-
 import pyrealsense2 as rs
+
 from realsense_opencv import DEVICE_ONE, DEVICE_TWO, Realsense
 
+# Print the color spaces methods
 number = 0
 for filename in dir(cv2):
     if filename.startswith('COLOR_'):
         number += 1
         print(filename)
 
-print("There are {} kinds of color methods in OpenCV.".format(str(number)))
+print("There are {} kinds of color spaces methods in OpenCV.".format(str(number)))
+
+# Callback function
 
 
 def nothing(x):
     pass
 
 
+# Create windows to contain the image
 cv2.namedWindow("Video", cv2.WINDOW_NORMAL)
-
 cv2.namedWindow("Tracking", cv2.WINDOW_NORMAL)
 cv2.createTrackbar("LH", "Tracking", 0, 255, nothing)
 cv2.createTrackbar("LS", "Tracking", 0, 255, nothing)
@@ -33,15 +37,20 @@ cv2.createTrackbar("UH", "Tracking", 250, 255, nothing)
 cv2.createTrackbar("US", "Tracking", 250, 255, nothing)
 cv2.createTrackbar("UV", "Tracking", 250, 255, nothing)
 
+# Register the RealSense camera
 camera_num = 1
 camera = Realsense(camera_num=camera_num, device_id=[
                    DEVICE_TWO], color_resolution=[1280, 720], depth_resolution=[1280, 720])
 try:
     while True:
+        # Read the image
         color_images, depth_images, depth_colormaps = camera.get_images()
         frame = color_images[0]
+
+        # Change the image color space from RGB -> HSV
         hsv_frame = cv2.cvtColor(frame, cv2.COLOR_RGB2HSV)
 
+        # Get the current positions of trackbars
         l_h = cv2.getTrackbarPos("LH", "Tracking")
         l_s = cv2.getTrackbarPos("LS", "Tracking")
         l_v = cv2.getTrackbarPos("LV", "Tracking")
@@ -80,12 +89,14 @@ try:
         mask = cv2.inRange(hsv_frame, low, high)
         result = cv2.bitwise_and(frame, frame, mask=mask)
 
+        # Show the image
         cv2.imshow("Video", frame)
         cv2.imshow("Red", red)
         cv2.imshow("Blue", blue)
         cv2.imshow("Green", green)
         cv2.imshow("Result", result)
 
+        # Wait until a key pressed
         key = cv2.waitKey(2)
         if key == ord('q') or key == 27:
             cv2.destroyAllWindows()

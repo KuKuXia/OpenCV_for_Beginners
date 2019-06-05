@@ -13,9 +13,8 @@ drawing = False
 mode = True
 ix, iy = -1, -1
 
-# mouse callback function
 
-
+# Define the callback function
 def draw_circle(event, x, y, flags, param):
     global ix, iy, drawing, mode
 
@@ -44,6 +43,8 @@ def draw_circle(event, x, y, flags, param):
 
 
 img = np.zeros((512, 512, 3), np.uint8)
+
+# Create a window to contain the image
 cv2.namedWindow('Image')
 cv2.setMouseCallback('Image', draw_circle)
 

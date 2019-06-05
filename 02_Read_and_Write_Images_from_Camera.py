@@ -44,5 +44,5 @@ cap.release()
 # Release the video writer object.
 out.release()
 
-# Destory all the windows
+# Destroy all the windows
 cv2.destroyAllWindows()

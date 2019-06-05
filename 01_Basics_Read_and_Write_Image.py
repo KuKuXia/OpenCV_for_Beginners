@@ -1,5 +1,5 @@
 """
-Read and write image using OpenCV
+Read and write image
 
 - cv2.imread("imageName", flag): Reade the image
     Color image loaded by OpenCV is in BGR mode
@@ -32,5 +32,5 @@ print(k)
 if k == ord('s'):
     cv2.imwrite('lena_copy.png', img)
 
-# Destory all the windows opened before
+# Destroy all the windows opened before
 cv2.destroyAllWindows()

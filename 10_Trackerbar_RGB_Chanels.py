@@ -34,7 +34,7 @@ while (1):
     k = cv.waitKey(1) & 0xFF
     if k == 27:
         break
-    # Get the current positions of four trackbars
+    # Get the current positions of trackbars
     b = cv.getTrackbarPos('B', 'image')
     g = cv.getTrackbarPos('G', 'image')
     r = cv.getTrackbarPos('R', 'image')

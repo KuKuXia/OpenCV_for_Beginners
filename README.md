@@ -12,9 +12,13 @@ For more image processing basics, please check my Image_Processing_100_Questions
 
 This repository contains some code files copied from some online courses and web tutorials. I modified these files so that it's more clear and easy for beginners to learn. The original links are listed below:
 
-1. [OpenCV Python Tutorial For Beginners](https://www.youtube.com/watch?v=kdLM6AOd2vc&list=PLS1QulWo1RIa7D1O6skqDQ-JZ1GGHKK-K)
+1. [OpenCV Python Tutorials](https://opencv-python-tutroals.readthedocs.io/en/latest/index.html)
 
-2. [Pysource](https://pysource.com/)
+2. [OpenCV Python Tutorial For Beginners](https://www.youtube.com/watch?v=kdLM6AOd2vc&list=PLS1QulWo1RIa7D1O6skqDQ-JZ1GGHKK-K)
+
+3. [Pysource](https://pysource.com/)
+
+   
 
 ## Installation
 
@@ -41,3 +45,18 @@ This repository contains some code files copied from some online courses and web
 5. Open one file and enjoy your journey.
 
 ## Content
+
+The fully documented files are listed below. I'm working on adding more comments to my codes.
+
+| Name                                                         | Note                                              |
+| :----------------------------------------------------------- | :------------------------------------------------ |
+| [01_Basics_Read_and_Write_Image](./01_Basics_Read_and_Write_Image.py) | Read and write image                              |
+| [01_Color_Spaces_in_OpenCV](./01_Color_Spaces_in_OpenCV.py)  | Using RealSense to learn the color space          |
+| [02_Read_and_Write_Images_from_Camera](./02_Read_and_Write_Images_from_Camera.py) | Read and write images from a camera               |
+| [03_Draw_Geometric_Shapes_on_Image](./03_Draw_Geometric_Shapes_on_Image.py) | Draw draw geometric shapes on image               |
+| [04_Set_Camera_Properties](./04_Set_Camera_Properties.py)    | Set the properties of the camera                  |
+| [05_Show_Date_and_Time_on_Videos](./05_Show_Date_and_Time_on_Videos.py) | Show date and time on videos                      |
+| [06_Show_Pixel_Details_using_Mouse](./06_Show_Pixel_Details_using_Mouse.py) | Show pixel details by callback function           |
+| [07_Draw_Lines_using_Mouse](./07_Draw_Lines_using_Mouse.py)  | Draw lines using callback function                |
+| [07_Draw_Shapes_using_Mouse](./07_Draw_Shapes_using_Mouse.py) | Draw rectangle and circle using callback function |
+
