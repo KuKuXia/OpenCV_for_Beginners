@@ -8,6 +8,7 @@ Read and write image
         - cv2.IMREAD_GRAYSCALE : Loads image in grayscale mode
         - cv2.IMREAD_UNCHANGED : Loads image as such including alpha channel
     Instead of these three flags, you can simply pass integers 1, 0 or -1 respectively.
+    A transparent image has four channels — 3 for color, and one for transparency. Such as tiff and png format image files. These images can be read in OpenCV using the IMREAD_UNCHANGED flag.
 - cv2.imshow("windowName", image): Show the image
     The window automatically fits to the image size
 """
