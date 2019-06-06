@@ -165,7 +165,7 @@ class Realsense(object):
 
 
 if __name__ == "__main__":
-    camera_num = 2
+    camera_num = 1
     camera = Realsense(camera_num=camera_num, device_id=[
         DEVICE_ONE, DEVICE_TWO], color_resolution=[1280, 720], depth_resolution=[1280, 720])
 

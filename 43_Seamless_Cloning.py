@@ -4,7 +4,6 @@ Original url:
 https://www.learnopencv.com/seamless-cloning-using-opencv-python-cpp/
 """
 
-
 # Standard imports
 import cv2
 import numpy as np

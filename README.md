@@ -56,30 +56,33 @@ This repository contains some code files copied from some online courses and web
 
 The fully documented files are listed below. I'm working on adding more comments to my codes.
 
-| Name                                                                                                                    | Note                                                                         |
-| :---------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------- |
-| [01_Basics_Read_and_Write_Image](./01_Basics_Read_and_Write_Image.py)                                                   | Read and write image                                                         |
-| [01_Color_Spaces_in_OpenCV](./01_Color_Spaces_in_OpenCV.py)                                                             | Using RealSense to learn the color space                                     |
-| [02_Read_and_Write_Images_from_Camera](./02_Read_and_Write_Images_from_Camera.py)                                       | Read and write images from a camera                                          |
-| [03_Draw_Geometric_Shapes_on_Image](./03_Draw_Geometric_Shapes_on_Image.py)                                             | Draw draw geometric shapes on image                                          |
-| [04_Set_Camera_Properties](./04_Set_Camera_Properties.py)                                                               | Set the properties of the camera                                             |
-| [05_Show_Date_and_Time_on_Videos](./05_Show_Date_and_Time_on_Videos.py)                                                 | Show date and time on videos                                                 |
-| [06_Show_Pixel_Details_using_Mouse](./06_Show_Pixel_Details_using_Mouse.py)                                             | Show pixel details by callback function                                      |
-| [07_Draw_Lines_using_Mouse](./07_Draw_Lines_using_Mouse.py)                                                             | Draw lines using callback function                                           |
-| [07_Draw_Shapes_using_Mouse](./07_Draw_Shapes_using_Mouse.py)                                                           | Draw rectangle and circle using callback function                            |
-| [08_Basic_Properties_and_Operations](./08_Basic_Properties_and_Operations.py)                                           | Basic properties and operations on images                                    |
-| [09_Arithmetic_Operations](./09_Arithmetic_Operations.py)                                                               | Arithmetic operation on images                                               |
-| [10_Trackerbar_RGB_Chanels](./10_Trackerbar_RGB_Chanels.py)                                                             | Learn RGB channels with trackerbar                                           |
-| [10_Trackerbar_Switch_and_Text](./10_Trackerbar_Switch_and_Text.py)                                                     | Trackerbar with switch and text                                              |
-| [11_Object_Detection_and_Object_Tracking_using_RealSense](./11_Object_Detection_and_Object_Tracking_using_RealSense.py) | Using RealSense to do real time object tracking and detection                |
-| [12_Image_Global_Thresholding](./12_Image_Global_Thresholding.py)                                                       | Image thresholding                                                           |
-| [12_Image_Thresholding_with_Matplotlib](./12_Image_Thresholding_with_Matplotlib.py)                                     | Image thresholding with matplotlib                                           |
-| [13_Adaptive_thresholding](./13_Adaptive_thresholding.py)                                                               | Adaptive thresholding                                                        |
-| [14_Otsu's_Binarization](./14_Otsu's_Binarization.py)                                                                   | Otsu's Binarization                                                          |
-| [42_Blob_Detection](./42_Blob_Detection.py)                                                                             | Blob detection                                                               |
-| [43_Seamless_Cloning](./43_Seamless_Cloning.py)                                                                         | Seamless cloning                                                             |
-| [43_Seamless_Cloning_with_Different_Clone_Mode](./43_Seamless_Cloning_with_Different_Clone_Mode.py)                     | Seamless cloning with different clone mode                                   |
-| [44_Non_Photorealistic_Rendering](./44_Non_Photorealistic_Rendering.py)                                                 | Non-Photorealistic Rendering using domain transform for edge-aware filtering |
+| Name                                                         | Note                                                         |
+| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| [01_Basics_Read_and_Write_Image](./01_Basics_Read_and_Write_Image.py) | Read and write image                                         |
+| [01_Color_Spaces_in_OpenCV](./01_Color_Spaces_in_OpenCV.py)  | Using RealSense to learn the color space                     |
+| [02_Read_and_Write_Images_from_Camera](./02_Read_and_Write_Images_from_Camera.py) | Read and write images from a camera                          |
+| [03_Draw_Geometric_Shapes_on_Image](./03_Draw_Geometric_Shapes_on_Image.py) | Draw draw geometric shapes on image                          |
+| [04_Read_Camera_Frame_Rate](./04_Read_Camera_Frame_Rate.py)  | Read camera frame rate                                       |
+| [04_Set_Camera_Properties](./04_Set_Camera_Properties.py)    | Set the properties of the camera                             |
+| [05_Show_Date_and_Time_on_Videos](./05_Show_Date_and_Time_on_Videos.py) | Show date and time on videos                                 |
+| [06_Show_Pixel_Details_using_Mouse](./06_Show_Pixel_Details_using_Mouse.py) | Show pixel details by callback function                      |
+| [07_Draw_Lines_using_Mouse](./07_Draw_Lines_using_Mouse.py)  | Draw lines using callback function                           |
+| [07_Draw_Shapes_using_Mouse](./07_Draw_Shapes_using_Mouse.py) | Draw rectangle and circle using callback function            |
+| [08_Basic_Properties_and_Operations](./08_Basic_Properties_and_Operations.py) | Basic properties and operations on images                    |
+| [09_Arithmetic_Operations](./09_Arithmetic_Operations.py)    | Arithmetic operation on images                               |
+| [10_Trackerbar_RGB_Chanels](./10_Trackerbar_RGB_Chanels.py)  | Learn RGB channels with trackerbar                           |
+| [10_Trackerbar_Switch_and_Text](./10_Trackerbar_Switch_and_Text.py) | Trackerbar with switch and text                              |
+| [11_Object_Detection_and_Object_Tracking_using_RealSense](./11_Object_Detection_and_Object_Tracking_using_RealSense.py) | Using RealSense to do real time object tracking and detection |
+| [12_Image_Global_Thresholding](./12_Image_Global_Thresholding.py) | Image thresholding                                           |
+| [12_Image_Thresholding_with_Matplotlib](./12_Image_Thresholding_with_Matplotlib.py) | Image thresholding with matplotlib                           |
+| [13_Adaptive_thresholding](./13_Adaptive_thresholding.py)    | Adaptive thresholding                                        |
+| [14_Otsu's_Binarization](./14_Otsu's_Binarization.py)        | Otsu's Binarization                                          |
+| [31_Homography](./31_Homography.py)                          | Homography between two images                                |
+| [42_Blob_Detection](./42_Blob_Detection.py)                  | Blob detection                                               |
+| [43_Seamless_Cloning](./43_Seamless_Cloning.py)              | Seamless cloning                                             |
+| [43_Seamless_Cloning_with_Different_Clone_Mode](./43_Seamless_Cloning_with_Different_Clone_Mode.py) | Seamless cloning with different clone mode                   |
+| [44_Non_Photorealistic_Rendering](./44_Non_Photorealistic_Rendering.py) | Non-Photorealistic Rendering using domain transform for edge-aware filtering |
+| [46_Filling_Holes_in_an_Image](./46_Filling_Holes_in_an_Image.py) | Filling holes in an image                                    |
 
 
 
