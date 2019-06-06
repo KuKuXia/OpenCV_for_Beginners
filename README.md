@@ -84,6 +84,8 @@ The fully documented files are listed below. I'm working on adding more comments
 | [44_Non_Photorealistic_Rendering](./44_Non_Photorealistic_Rendering.py) | Non-Photorealistic Rendering using domain transform for edge-aware filtering |
 | [46_Filling_Holes_in_an_Image](./46_Filling_Holes_in_an_Image.py) | Filling holes in an image                                    |
 | [47_Delaunay_Triangulation_and_Voronoi_Diagram](./47_Delaunay_Triangulation_and_Voronoi_Diagram.py) | Delaunay Triangulation and Voronoi Diagram                   |
+| [48_Image_Alignment_using_ECC_Euclidean](./48_Image_Alignment_using_ECC_Euclidean.py) | Image alignment using  ECC Maximization(Euclidean)           |
+| [48_Image_Alignment_using_ECC_Homography](./48_Image_Alignment_using_ECC_Homography.py) | Image alignment using ECC Maximization(Homography)           |
 
 
 
