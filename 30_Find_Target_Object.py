@@ -10,6 +10,7 @@ while (cap.isOpened()):
         break
 cap.release()
 cv2.destroyAllWindows()
+
 cv2.imwrite("./images/object.jpg", frame)
 
 img = cv2.imread('./images/object.jpg')
