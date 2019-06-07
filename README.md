@@ -18,6 +18,8 @@ This repository contains some code files copied from some online courses and web
 
 3. [Pysource](https://pysource.com/)
 
+4. [Learn OpenCV]([https://www.learnopencv.com](https://www.learnopencv.com/))
+
    
 
 ## Installation
@@ -86,6 +88,7 @@ The fully documented files are listed below. I'm working on adding more comments
 | [47_Delaunay_Triangulation_and_Voronoi_Diagram](./47_Delaunay_Triangulation_and_Voronoi_Diagram.py) | Delaunay Triangulation and Voronoi Diagram                   |
 | [48_Image_Alignment_using_ECC_Euclidean](./48_Image_Alignment_using_ECC_Euclidean.py) | Image alignment using  ECC Maximization(Euclidean)           |
 | [48_Image_Alignment_using_ECC_Homography](./48_Image_Alignment_using_ECC_Homography.py) | Image alignment using ECC Maximization(Homography)           |
+| [50_Rotation_Matrix_to_Euler_Angles](./50_Rotation_Matrix_to_Euler_Angles.py) | Rotation matrix to Euler angles                              |
 
 
 
