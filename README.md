@@ -91,6 +91,9 @@ The fully documented files are listed below. I'm working on adding more comments
 | [49_Warp_One_Triangle_to_Another](./49_Warp_One_Triangle_to_Another.py) | Warp one triangle to another                                 |
 | [50_Rotation_Matrix_to_Euler_Angles](./50_Rotation_Matrix_to_Euler_Angles.py) | Rotation matrix to Euler angles                              |
 | [51_Select_ROI](./51_Select_ROI.py)                          | Select region of interest                                    |
+| [52_Automatic_Red_Eye_Remover](./52_Automatic_Red_Eye_Remover.py) | Automatic red Eye remover                                    |
+| [53_Virtual_Keyboard](./53_Virtual_Keyboard.py)              | RealSense virtual keyboard                                   |
+| [54_Alpha_Blending](./54_Alpha_Blending.py)                  | Alpha blending                                               |
 
 
 

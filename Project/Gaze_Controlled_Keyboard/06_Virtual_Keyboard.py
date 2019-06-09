@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-from Virtual_Keyboard import Keyboard
+from utilities import Keyboard
 
 
 if __name__ == "__main__":
