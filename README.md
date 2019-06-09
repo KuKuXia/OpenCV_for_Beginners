@@ -80,10 +80,12 @@ The fully documented files are listed below. I'm working on adding more comments
 | [13_Adaptive_thresholding](./13_Adaptive_thresholding.py)    | Adaptive thresholding                                        |
 | [14_Otsu's_Binarization](./14_Otsu's_Binarization.py)        | Otsu's Binarization                                          |
 | [31_Homography](./31_Homography.py)                          | Homography between two images                                |
+| [31_Object_Tracking_Advanced](./31_Object_Tracking_Advanced.py) | Object tracking                                              |
 | [42_Blob_Detection](./42_Blob_Detection.py)                  | Blob detection                                               |
 | [43_Seamless_Cloning](./43_Seamless_Cloning.py)              | Seamless cloning                                             |
 | [43_Seamless_Cloning_with_Different_Clone_Mode](./43_Seamless_Cloning_with_Different_Clone_Mode.py) | Seamless cloning with different clone mode                   |
 | [44_Non_Photorealistic_Rendering](./44_Non_Photorealistic_Rendering.py) | Non-Photorealistic Rendering using domain transform for edge-aware filtering |
+| [45_ApplyColorMap_for_Pseudocoloring](./45_ApplyColorMap_for_Pseudocoloring.py) | Apply color map for pseudo coloring                          |
 | [46_Filling_Holes_in_an_Image](./46_Filling_Holes_in_an_Image.py) | Filling holes in an image                                    |
 | [47_Delaunay_Triangulation_and_Voronoi_Diagram](./47_Delaunay_Triangulation_and_Voronoi_Diagram.py) | Delaunay Triangulation and Voronoi Diagram                   |
 | [48_Image_Alignment_using_ECC_Euclidean](./48_Image_Alignment_using_ECC_Euclidean.py) | Image alignment using  ECC Maximization(Euclidean)           |
