@@ -1,8 +1,8 @@
 import cv2
 import numpy as np
 
-digits = cv2.imread("./images/digits.png", cv2.IMREAD_GRAYSCALE)
-test_digits = cv2.imread("./images/test_digits.png", cv2.IMREAD_GRAYSCALE)
+digits = cv2.imread("../images/digits.png", cv2.IMREAD_GRAYSCALE)
+test_digits = cv2.imread("../images/test_digits.png", cv2.IMREAD_GRAYSCALE)
 
 rows = np.vsplit(digits, 50)
 cells = []
@@ -37,7 +37,7 @@ print("Test labels are: ", test_labels)
 pre_result = np.int32(result.ravel())
 print("Predicted labels are: ", pre_result)
 correct = 0
-for i,j in zip(pre_result, test_labels):
+for i, j in zip(pre_result, test_labels):
     if i == j:
         correct += 1
 print("The test accuracy is: ", correct*100/50)

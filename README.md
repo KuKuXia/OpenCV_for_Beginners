@@ -96,6 +96,5 @@ The fully documented files are listed below. I'm working on adding more comments
 | [52_Automatic_Red_Eye_Remover](./52_Automatic_Red_Eye_Remover.py) | Automatic red Eye remover                                    |
 | [53_Virtual_Keyboard](./53_Virtual_Keyboard.py)              | RealSense virtual keyboard                                   |
 | [54_Alpha_Blending](./54_Alpha_Blending.py)                  | Alpha blending                                               |
-
-
+| [55_Selective_Search_for_Object_Detection](./55_Selective_Search_for_Object_Detection.py) | Selective search for object detection                        |
 
