@@ -61,7 +61,7 @@ if __name__ == '__main__':
     mergeDebevec = cv2.createMergeDebevec()
     hdrDebevec = mergeDebevec.process(images, times, responseDebevec)
     # Save HDR image.
-    cv2.imwrite("./images/HDR/hdrDebevec.hdr", hdrDebevec)
+    cv2.imwrite("./images/HDR/hdrDebevec-example.hdr", hdrDebevec)
     print("saved hdrDebevec.hdr ")
 
     # Tonemap using Drago's method to obtain 24-bit color image
@@ -69,8 +69,9 @@ if __name__ == '__main__':
     tonemapDrago = cv2.createTonemapDrago(1.0, 0.7)
     ldrDrago = tonemapDrago.process(hdrDebevec)
     # The final output is multiplied by 3 just because it gave the most pleasing results.
-    ldrDrago = 3 * ldrDrago  
-    cv2.imwrite("./images/HDR/ldr-Drago.jpg", ldrDrago * 255)
+    ldrDrago = 3 * ldrDrago
+    cv2.imwrite("./images/HDR/ldr-Drago-example.jpg", ldrDrago * 255)
+    cv2.imshow("ldr-Drago", ldrDrago)
     print("saved ldr-Drago.jpg")
 
     # Tonemap using Durand's method obtain 24-bit color image
@@ -78,14 +79,16 @@ if __name__ == '__main__':
     tonemapDurand = cv2.createTonemapDurand(1.5, 4, 1.0, 1, 1)
     ldrDurand = tonemapDurand.process(hdrDebevec)
     ldrDurand = 3 * ldrDurand
-    cv2.imwrite("./images/HDR/ldr-Durand.jpg", ldrDurand * 255)
+    cv2.imwrite("./images/HDR/ldr-Durand-example.jpg", ldrDurand * 255)
+    cv2.imshow("ldrDurand", ldrDurand)
     print("saved ldr-Durand.jpg")
 
     # Tonemap using Reinhard's method to obtain 24-bit color image
     print("Tonemaping using Reinhard's method ... ")
     tonemapReinhard = cv2.createTonemapReinhard(1.5, 0, 0, 0)
     ldrReinhard = tonemapReinhard.process(hdrDebevec)
-    cv2.imwrite("./images/HDR/ldr-Reinhard.jpg", ldrReinhard * 255)
+    cv2.imwrite("./images/HDR/ldr-Reinhard-example.jpg", ldrReinhard * 255)
+    cv2.imshow("ldrReinhard", ldrReinhard)
     print("saved ldr-Reinhard.jpg")
 
     # Tonemap using Mantiuk's method to obtain 24-bit color image
@@ -93,5 +96,12 @@ if __name__ == '__main__':
     tonemapMantiuk = cv2.createTonemapMantiuk(2.2, 0.85, 1.2)
     ldrMantiuk = tonemapMantiuk.process(hdrDebevec)
     ldrMantiuk = 3 * ldrMantiuk
-    cv2.imwrite("./images/HDR/ldr-Mantiuk.jpg", ldrMantiuk * 255)
+    cv2.imwrite("./images/HDR/ldr-Mantiuk-example.jpg", ldrMantiuk * 255)
+    cv2.imshow("ldrMantiuk", ldrMantiuk)
     print("saved ldr-Mantiuk.jpg")
+
+    # Wait until a key pressed
+    cv2.waitKey(0)
+
+    # Destroy all the windows opened before
+    cv2.destroyAllWindows()
