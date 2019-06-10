@@ -9,6 +9,10 @@ Golden_Bridge/
 RealSense/
 *example.*g
 Exposure_Fusion/
+MNIST_data/
+graphs/
+encode*
+checkpoint*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
