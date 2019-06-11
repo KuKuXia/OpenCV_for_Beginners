@@ -15,6 +15,7 @@ encode*
 checkpoint*
 Example_Image_Data/
 *.h5
+OpenPose/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
