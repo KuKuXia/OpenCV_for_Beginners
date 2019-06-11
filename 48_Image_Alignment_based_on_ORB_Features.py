@@ -1,10 +1,12 @@
 """
-Image alignment based on orb features
+Image alignment based on ORB features
 Original url:
 https://www.learnopencv.com/image-alignment-feature-based-using-opencv-c-python/
 
+ORB stands for Oriented FAST and Rotated BRIEF.
+
 Image alignment
-It (also known as image registration) is the technique of warping one image ( or sometimes both images ) so that the features in the two images line up perfectly.
+    It (also known as image registration) is the technique of warping one image ( or sometimes both images ) so that the features in the two images line up perfectly.
 """
 
 # Import the packages

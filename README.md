@@ -88,6 +88,7 @@ The fully documented files are listed below. I'm working on adding more comments
 | [45_ApplyColorMap_for_Pseudocoloring](./45_ApplyColorMap_for_Pseudocoloring.py) | Apply color map for pseudo coloring                          |
 | [46_Filling_Holes_in_an_Image](./46_Filling_Holes_in_an_Image.py) | Filling holes in an image                                    |
 | [47_Delaunay_Triangulation_and_Voronoi_Diagram](./47_Delaunay_Triangulation_and_Voronoi_Diagram.py) | Delaunay Triangulation and Voronoi Diagram                   |
+| [48_Image_Alignment_based_on_ORB_Features](./48_Image_Alignment_based_on_ORB_Features.py) | Image alignment based on ORB features                        |
 | [48_Image_Alignment_using_ECC_Euclidean](./48_Image_Alignment_using_ECC_Euclidean.py) | Image alignment using  ECC Maximization(Euclidean)           |
 | [48_Image_Alignment_using_ECC_Homography](./48_Image_Alignment_using_ECC_Homography.py) | Image alignment using ECC Maximization(Homography)           |
 | [49_Warp_One_Triangle_to_Another](./49_Warp_One_Triangle_to_Another.py) | Warp one triangle to another                                 |
