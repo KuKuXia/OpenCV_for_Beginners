@@ -100,4 +100,5 @@ The fully documented files are listed below. I'm working on adding more comments
 | [55_Selective_Search_for_Object_Detection](./55_Selective_Search_for_Object_Detection.py) | Selective search for object detection                        |
 | [56_High_Dynamic_Range](56_High_Dynamic_Range.py)            | High dynamic range                                           |
 | [57_Exposure_Fusion](./57_Exposure_Fusion.py)                | Exposure Fusion                                              |
+| [58_OCR_using_tesseract](./58_OCR_using_tesseract.py)        | OCR using tesseract                                          |
 
