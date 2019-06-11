@@ -4,7 +4,7 @@ Please download the images from the original url into the ./images/Exposure_Fusi
 https://www.learnopencv.com/exposure-fusion-using-opencv-cpp-python/
 
     - It is a method for combining images taken with different exposure settings into one image that looks like a tone mapped High Dynamic Range (HDR) image.
-    - It computes the desired image by keeping only the “best” parts in the multi-exposure image sequence.
+    - It computes the desired image by keeping only the best parts in the multi-exposure image sequence.
 """
 
 # Import the packages

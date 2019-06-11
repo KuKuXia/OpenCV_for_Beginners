@@ -13,7 +13,8 @@ MNIST_data/
 graphs/
 encode*
 checkpoint*
-
+Example_Image_Data/
+*.h5
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
