@@ -82,6 +82,7 @@ The fully documented files are listed below. I'm working on adding more comments
 | [31_Homography](./31_Homography.py)                          | Homography between two images                                |
 | [31_Object_Tracking_Advanced](./31_Object_Tracking_Advanced.py) | Object tracking                                              |
 | [42_Blob_Detection](./42_Blob_Detection.py)                  | Blob detection                                               |
+| [42_Find_the_Center(Centroid)_of_a_Blob](./42_Find_the_Center(Centroid)_of_a_Blob.py) | Find the center(centroid) of a blob using moment             |
 | [43_Seamless_Cloning](./43_Seamless_Cloning.py)              | Seamless cloning                                             |
 | [43_Seamless_Cloning_with_Different_Clone_Mode](./43_Seamless_Cloning_with_Different_Clone_Mode.py) | Seamless cloning with different clone mode                   |
 | [44_Non_Photorealistic_Rendering](./44_Non_Photorealistic_Rendering.py) | Non-Photorealistic Rendering using domain transform for edge-aware filtering |
