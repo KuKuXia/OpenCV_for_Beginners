@@ -17,6 +17,8 @@ Example_Image_Data/
 *.h5
 OpenPose/
 *example*
+*.caffemodel
+*.prototxt
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

@@ -19,6 +19,14 @@ The appearance model fine tunes this estimate to provide a more accurate estimat
 
 In machine learning, we use the word “online” to refer to algorithms that are trained on the fly at run time. An offline classifier may need thousands of examples to train a classifier, but an online classifier is typically trained using a very few examples at run time.
 
+GOTURN
+    Generic Object Tracking Using Regression Networks, is a Deep Learning based tracking algorithm.
+    It learns the motion of an object in an offline manner. 
+    Note:
+        If you want to use the GOTURN method, you need to download the caffee model files from this link into the path of this script:
+        https://www.dropbox.com/sh/77frbrkmf9ojfm6/AACgY7-wSfj-LIyYcOgUSZ0Ua?dl=0
+
+
 """
 
 # Import the packages
@@ -33,7 +41,7 @@ if __name__ == '__main__':
     # Instead of MIL, you can also use
     tracker_types = ['BOOSTING', 'MIL', 'KCF',
                      'TLD', 'MEDIANFLOW', 'GOTURN', 'CSRT', "MOSSE"]
-    tracker_type = tracker_types[-1]
+    tracker_type = tracker_types[-3]
 
     if tracker_type == 'BOOSTING':
         tracker = cv2.TrackerBoosting_create()
@@ -79,6 +87,7 @@ if __name__ == '__main__':
         # Read a new frame
         ok, frame = video.read()
         if not ok:
+            # The tracker failed to track the object, here you can add some object detection methods
             break
 
         # Start timer
