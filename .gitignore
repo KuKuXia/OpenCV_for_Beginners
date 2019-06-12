@@ -13,7 +13,7 @@ MNIST_data/
 graphs/
 encode*
 checkpoint*
-Example_Image_Data/
+Example*/
 *.h5
 OpenPose/
 *example*
