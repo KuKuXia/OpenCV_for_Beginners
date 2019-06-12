@@ -66,8 +66,13 @@ def multi_blob():
     for c in contours:
         # calculate moments for each contour
         M = cv2.moments(c)
-        cX = int(M["m10"] / M["m00"])
-        cY = int(M["m01"] / M["m00"])
+
+        # In case of the segmentation did not happen perfectly.
+        if M["m00"] != 0:
+            cX = int(M["m10"] / M["m00"])
+            cY = int(M["m01"] / M["m00"])
+        else:
+            cX, cY = 0, 0
 
         # calculate x,y coordinate of center
         cv2.circle(img, (cX, cY), 5, (255, 255, 255), -1)

@@ -102,4 +102,5 @@ The fully documented files are listed below. I'm working on adding more comments
 | [56_High_Dynamic_Range](56_High_Dynamic_Range.py)            | High dynamic range                                           |
 | [57_Exposure_Fusion](./57_Exposure_Fusion.py)                | Exposure Fusion                                              |
 | [58_OCR_using_tesseract](./58_OCR_using_tesseract.py)        | OCR using tesseract                                          |
+| [59_Convex_Hull](./59_Convex_Hull.py)                        | Convex Hull                                                  |
 
