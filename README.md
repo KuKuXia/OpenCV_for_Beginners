@@ -81,6 +81,7 @@ The fully documented files are listed below. I'm working on adding more comments
 | [14_Otsu's_Binarization](./14_Otsu's_Binarization.py)        | Otsu's Binarization                                          |
 | [31_Homography](./31_Homography.py)                          | Homography between two images                                |
 | [31_Object_Tracking_Advanced](./31_Object_Tracking_Advanced.py) | Object tracking                                              |
+| [31_Multi_Object_Tracking](./31_Multi_Object_Tracking.py)    | Multi object tracking                                        |
 | [42_Blob_Detection](./42_Blob_Detection.py)                  | Blob detection                                               |
 | [42_Find_the_Center(Centroid)_of_a_Blob](./42_Find_the_Center(Centroid)_of_a_Blob.py) | Find the center(centroid) of a blob using moment             |
 | [43_Seamless_Cloning](./43_Seamless_Cloning.py)              | Seamless cloning                                             |
@@ -103,4 +104,5 @@ The fully documented files are listed below. I'm working on adding more comments
 | [57_Exposure_Fusion](./57_Exposure_Fusion.py)                | Exposure Fusion                                              |
 | [58_OCR_using_tesseract](./58_OCR_using_tesseract.py)        | OCR using tesseract                                          |
 | [59_Convex_Hull](./59_Convex_Hull.py)                        | Convex Hull                                                  |
+| [60_Heatmap_for_Logo_Detection](./60_Heatmap_for_Logo_Detection.py) | Heatmap for logo detection                                   |
 
