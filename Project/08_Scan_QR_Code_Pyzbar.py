@@ -26,7 +26,7 @@ def display(im, decodedObjects):
         # Number of points in the convex hull
         n = len(hull)
 
-        # Draw the convext hull
+        # Draw the convex hull
         for j in range(0, n):
             cv2.line(im, hull[j], hull[(j+1) % n], (255, 0, 0), 3)
 

@@ -53,7 +53,7 @@ if __name__ == '__main__':
   for t in trackerTypes:
       print(t)
 
-  trackerType = "BOOSTING"
+  trackerType = "GOTURN"
 
   # Set video to load
   videoPath = "./images/run.mp4"
@@ -129,5 +129,5 @@ if __name__ == '__main__':
         if cv2.waitKey(1) & 0xFF == 27:  # Esc pressed
             break
 
-        # Destroy all the windows opened before
-        cv2.destroyAllWindows()
+  # Destroy all the windows opened before
+  cv2.destroyAllWindows()
